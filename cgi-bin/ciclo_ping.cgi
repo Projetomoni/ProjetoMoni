@@ -1,6 +1,6 @@
 #!/bin/bash
 while :
 do
-         source  pingar.sh
+         source  pingar.cgi
          sleep 30
 done

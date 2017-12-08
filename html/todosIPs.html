@@ -1,4 +1,3 @@
-
 <!doctype html>
 
 <html>
@@ -47,9 +46,10 @@
         margin-top: 35px;
         margin-left: 17px;
       }
-
-      a{
-	margin-left: 90px;
+      #voltar{
+	      margin-left= 90px;
+	      padding-top= 10px;
+        border-radius: 15px, 15px, 15px, #000;
       }
     </style>
   </head>
@@ -58,13 +58,13 @@
   <div class="box-parent-login">
   <div class="well bg-white box-login">
   <h1 class="ls-login-logo"><center>IP ESPECIFICO</center></h1>
-  <form role="form" action="cgi-bin/espec.cgi" method="post">
+  <form role="form" action="cgi-bin/verificando2.cgi" method="post">
   <div class="formulario">
   <div class="form-group ls-login-user">
   <center><input class="form-control ls-login-bg-user input-lg" id="USER" type="text" name="ip" aria-label="Usuário" placeholder="Digite o ip"></center>
   </div>
-  <center><input type="submit" value="Pingar" class="btn btn-primary btn-lg btn-block" id="teste"></center><br /><br /><br />
-  <a href="menu.html">Voltar ao Menu</a>
+  <center><input type="submit" value="Enviar" class="btn btn-primary btn-lg btn-block" id="teste"></center>
+  <a id="voltar" href="menu.html">Voltar ao Menu</a>
   </div>
   </form>
   </div>

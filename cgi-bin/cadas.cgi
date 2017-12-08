@@ -28,10 +28,10 @@ usuario=$(echo $POST | cut -d"&" -f1 | cut -d"=" -f2)
 senha=$(echo $POST | cut -d"&" -f2 | cut -d"=" -f2)
 csenha=$(echo $POST | cut -d"&" -f3 | cut -d"=" -f2)
 
-if [[ $senha == $csenha ]] ; then
-
-
-if [[ ! $(grep "^$usuario;" PASSW) ]] ; then
+if [[ $senha != $csenha ]] ; then
+	foinao
+	break
+elif [[ ! $(grep "^$usuario;" PASSW) ]] ; then
         if [[ $usuario == "" || $senha == "" ]] ; then
                 foinao
         else
