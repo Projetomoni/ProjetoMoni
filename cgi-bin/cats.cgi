@@ -1,21 +1,26 @@
 #!/bin/bash
+IFS=$'\n'
 read SO
 VAI=$(echo $SO | cut -d"=" -f2)
 echo "content-type: text/html"
 echo
-
 um(){
-	cat resto/arm_info
+        for x in $(cat ./resto/arm_info); do
+                echo "<p>$x</p>"
+        done
 }
 
 dois(){
-	cat resto/arm_infolog
+        for x in $(cat ./resto/arm_infolog); do
+                echo "<p>$x</p>"
+        done
 }
 
-case $SO in
+if [[ $VAI == "atual" ]] ; then
+um
+elif [[ $VAI == "completo" ]] ; then
+dois
+else
+echo "Opção Inexistente"
+fi
 
-	"arm_info") um ;;
-	"arm_infolog") dois ;;
-	*) echo "<h1>Opção Inexistente</h1>"
-
-esac
