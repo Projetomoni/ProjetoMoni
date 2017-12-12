@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ajuda</title>
+
+  </head>
+    <body>
+        <h1>Relatórios</h1>
+          <h2>Relatório Atual</h2>
+            <p>O relatóro atual exibe o estado atual das máquinas registradas</p>
+          <br>
+          <h2>Relatório Completo</h2>
+            <p>O Relatório Completo exibe o histórico dos outros relatórios</p>
+          <br>
+        <h1>Monitoramento Total</h1>
+          <p>O Monitoramento Total
